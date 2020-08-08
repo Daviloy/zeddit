@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/bootstrap.min.108cc16f.css">
+        <title>Zeddit - Find and read articles from Reddit</title>
+        <style>.spinner-image{
+                display: block;
+                margin: auto;;
+                width: 300px;
+            }</style>
+    <script src="/bootstrap.min.108cc16f.js"></script></head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary mb-3">
+            <div class="container">
+                <span class="navbar-brand">Zeddit</span>
+            </div>
+        </nav>
+        <div id="search-container" class="container">
+            <div id="search" class="card card-body bg-light mb-2">
+                <h4>Search Reddit</h4>
+
+                <form id="search-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" id="search-input" placeholder="Search Term...">
+                    </div>
+                    <div class="form form-check-inline">
+                        Sort By:
+                        <input type="radio" class="form-check-input ml-2" name="sortby" value="relevance" checked="">
+                        <label class="form-check-label">Relevance</label>
+                    </div>
+                    <div class="form form-check-inline">
+                        <input type="radio" class="form-check-input ml-2" name="sortby" value="new">
+                        <label class="form-check-label">Latest</label>
+                    </div>
+
+                    <h5 class="mt-2">Number of Posts</h5>
+                    <div class="form-group">
+                        <select name="limit" id="limit" class="form-control">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block mt-4">Search</button>
+                </form>
+            </div>
+            <div id="spinner"></div>
+            <div id="results"></div>
+        </div>
+        <script src="/Zeddit.e31bb0bc.js"></script>
+    </body>
+</html>

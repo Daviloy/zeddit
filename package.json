@@ -1,0 +1,8 @@
+{
+  "name": "zeddit",
+  "version": "1.0.0",
+  "description": "An application for finding and reading articles on Reddit.",
+  "main": "index.js",
+  "author": "Dave Wilson",
+  "license": "MIT"
+}
